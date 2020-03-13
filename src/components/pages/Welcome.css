@@ -2,10 +2,22 @@ h3 {
   text-align: center;
   font: 31px Phosphate;
   font-size: 1.5rem;
-  padding: 30px;
+  padding: 50px;
 }
 .welcPage {
+  padding: 30px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.welcBtn {
+  border: 2px solid black;
+  background-color: #1a1817;
+  color: #d97919;
+  height: 70px;
+  width: 300px;
+  margin-top: 20px;
+  font-size: 1.6rem;
+  font: 20px Phosphate;
 }
