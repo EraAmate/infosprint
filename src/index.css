@@ -7,4 +7,7 @@
 body {
   margin: 0;
   font-size: 16px;
+  /* font-family: 'Phosphate'; */
+  background-color: #868181;
+  height: 100vh;
 }
