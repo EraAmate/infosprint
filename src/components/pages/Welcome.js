@@ -1,5 +1,7 @@
 import React from 'react';
 import './Welcome.css';
+import Button from '../Button';
+// import { Link } from 'react-router-dom';
 
 function Welcome() {
   return (
@@ -8,10 +10,10 @@ function Welcome() {
         follow the coolest topics all around Japan and anime with info ninja
       </h3>
       <div className="welcPage">
-        <button className="welcBtn">anime list</button>
-        <button className="welcBtn">network </button>
-        <button className="welcBtn">news</button>
-        <button className="welcBtn">something else</button>
+        <Button className="welcBtn" />
+        <Button className="welcBtn" />
+        <Button className="welcBtn" />
+        <Button className="welcBtn" />
       </div>
     </>
   );
