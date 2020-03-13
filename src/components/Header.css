@@ -1,0 +1,15 @@
+.header {
+  margin: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #faaf1e;
+}
+.title {
+  font: 31px Phosphate;
+  font-size: 2.1rem;
+}
+.logo {
+  height: 3.1rem;
+}
