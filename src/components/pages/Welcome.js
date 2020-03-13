@@ -17,8 +17,8 @@ function Welcome(props) {
           name="questions"
           destination="/question"
         />
-        <DirectBtn className="welcBtn" name="network" destination="" />
-        <DirectBtn className="welcBtn" name="game" destination="" />
+        <DirectBtn className="welcBtn" name="network" destination="/network" />
+        <DirectBtn className="welcBtn" name="game" destination="/game" />
       </div>
     </>
   );
