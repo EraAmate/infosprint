@@ -1,19 +1,24 @@
 import React from 'react';
 import './Welcome.css';
-import Button from '../Button';
+import DirectBtn from '../DirectBtn';
+
 // import { Link } from 'react-router-dom';
 
-function Welcome() {
+function Welcome(props) {
   return (
     <>
       <h3>
         follow the coolest topics all around Japan and anime with info ninja
       </h3>
       <div className="welcPage">
-        <Button className="welcBtn" />
-        <Button className="welcBtn" />
-        <Button className="welcBtn" />
-        <Button className="welcBtn" />
+        <DirectBtn className="welcBtn" name="anime list" destination="/anime" />
+        <DirectBtn
+          className="welcBtn"
+          name="questions"
+          destination="/question"
+        />
+        <DirectBtn className="welcBtn" name="network" destination="" />
+        <DirectBtn className="welcBtn" name="game" destination="" />
       </div>
     </>
   );
