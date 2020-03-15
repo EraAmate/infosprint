@@ -50,7 +50,9 @@ const Animes = () => {
       <div className="animeList">
         {animes.map(anime => (
           <div key={anime.title}>
-            <p key={anime.title}>{anime.title}</p>
+            <h3 className="animeName" key={anime.title}>
+              {anime.title}
+            </h3>
             <img alt={anime.title} key={anime.img} src={anime.img}></img>
             <p key={anime.synopsis}>{anime.synopsis}</p>
           </div>

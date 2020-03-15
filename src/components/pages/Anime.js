@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Anime.css'
 import Animes from '../GetAnime'
 import DirectBtn from '../DirectBtn'
