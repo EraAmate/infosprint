@@ -2,6 +2,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 300px;
   height: auto;
+  text-align: center;
 }
