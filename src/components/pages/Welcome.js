@@ -15,7 +15,7 @@ function Welcome(props) {
         <DirectBtn className="welcBtn" name="anime list" destination="/anime" />
         <DirectBtn
           className="welcBtn"
-          name="questions"
+          name="add anime"
           destination="/question"
         />
         <DirectBtn className="welcBtn" name="network" destination="/network" />
