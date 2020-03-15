@@ -1,0 +1,8 @@
+.section {
+  align-items: center;
+  margin-top: 50px;
+  background-color: #1a1918;
+  height: 300px;
+  max-width: 300px;
+  width: 100%;
+}
