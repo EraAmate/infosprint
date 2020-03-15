@@ -3,12 +3,11 @@ import './Anime.css'
 import Animes from '../GetAnime'
 import DirectBtn from '../DirectBtn'
 
-function Header() {
+function Anime() {
   return (
     <>
       <div className="animePage">
         <h3>Find your favourite anime</h3>
-        <input type="text" className="search" placeholder="Naruto?" />
       </div>
       <Animes />
       <DirectBtn className="btn" name="back to menu" destination="/" />
@@ -16,6 +15,6 @@ function Header() {
   )
 }
 
-export default Header
+export default Anime
 
 /// FILTER, SEARCH, API
