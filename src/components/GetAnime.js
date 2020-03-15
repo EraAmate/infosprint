@@ -5,8 +5,18 @@ const Animes = () => {
   // const [hasError, setErrors] = useState(false);
   const [animes, setAnimes] = useState([])
 
+  const [search, setSearch] = useState('test')
+
+  function searchResults(e) {
+    const inputValue = e.target.value
+    console.log(inputValue)
+    setSearch(inputValue)
+  }
+
   async function getAnimes() {
-    const data = await fetch('https://api.jikan.moe/v3/search/anime?q=limit=30')
+    const data = await fetch(
+      `https://api.jikan.moe/v3/search/anime?q=${search}limit=30`
+    )
     data.json().then(data => {
       const myAnimes = data.results.map(result => {
         const myAnime = {}
@@ -26,6 +36,17 @@ const Animes = () => {
 
   return (
     <>
+      <div className="container">
+        <input
+          onChange={e => searchResults(e)}
+          type="text"
+          className="search"
+          placeholder="find anime"
+        />
+        <button onClick={getAnimes} className="searchBtn" type="Submit">
+          Submit
+        </button>
+      </div>
       <div className="animeList">
         {animes.map(anime => (
           <div key={anime.title}>
