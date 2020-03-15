@@ -41,6 +41,9 @@
   background-color: #d97919;
 }
 
+img {
+  height: 450px;
+}
 p {
   font-size: 1.5rem;
   color: white;
