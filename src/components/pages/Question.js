@@ -1,6 +1,7 @@
 import React from 'react';
 import './Question.css';
 import Card from '../Card';
+import DirectBtn from '../DirectBtn';
 
 function Question() {
   return (
@@ -17,6 +18,7 @@ function Question() {
               placeholder=" anime synopsis "
             />
             <button className="btn">Submit</button>
+            <DirectBtn className="btn" name="back to menu" destination="/" />
           </form>
         </Card>
       </div>

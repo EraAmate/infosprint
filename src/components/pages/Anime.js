@@ -1,6 +1,7 @@
 import React from 'react';
 import './Anime.css';
 import Animes from './GetAnime';
+import DirectBtn from '../DirectBtn';
 
 function Header() {
   return (
@@ -12,6 +13,7 @@ function Header() {
       <div className="animeList">
         <Animes />
       </div>
+      <DirectBtn className="btn" name="back to menu" destination="/" />
     </>
   );
 }
