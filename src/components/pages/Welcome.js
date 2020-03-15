@@ -1,6 +1,7 @@
 import React from 'react';
 import './Welcome.css';
 import DirectBtn from '../DirectBtn';
+// import NinjaProgram from '../assets/NinjaProgram.jpg';
 
 // import { Link } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ function Welcome(props) {
         <DirectBtn className="welcBtn" name="network" destination="/network" />
         <DirectBtn className="welcBtn" name="game" destination="/game" />
       </div>
+      {/* <img className="logo" src={"NinjaProgram"} alt="Ninja surfs" /> */}
     </>
   );
 }
