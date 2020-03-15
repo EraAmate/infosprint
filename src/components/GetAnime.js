@@ -32,7 +32,7 @@ const Animes = () => {
 
   useEffect(() => {
     getAnimes()
-  }, [])
+  })
 
   return (
     <>

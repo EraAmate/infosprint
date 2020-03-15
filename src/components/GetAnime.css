@@ -13,11 +13,23 @@
   text-align: center;
   width: 300px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1rem;
   font: 18px Phosphate;
   color: #d97919;
 }
 .search::placeholder {
   font: 15px Phosphate;
+}
+
+.searchBtn {
+  border-radius: 5px;
+  border: 2px solid #1a1918;
+  margin-left: 10px;
+  font-size: 1rem;
+  font: 18px Phosphate;
+  width: 100px;
+  font-size: 1rem;
+  color: #d97918;
+  background-color: #1a1918;
 }
