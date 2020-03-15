@@ -1,6 +1,6 @@
 import React from 'react';
 import './Anime.css';
-import Animes from './GetAnime';
+import Animes from '../GetAnime';
 import DirectBtn from '../DirectBtn';
 
 function Header() {
