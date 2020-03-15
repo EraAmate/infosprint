@@ -16,6 +16,7 @@ function Question() {
               className="input"
               placeholder=" anime synopsis "
             />
+            <button className="btn">Submit</button>
           </form>
         </Card>
       </div>
