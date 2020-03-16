@@ -1,23 +1,38 @@
 import React from 'react'
-import './Welcome.css'
-import DirectBtn from '../DirectBtn'
-// import NinjaProgram from '../assets/NinjaProgram.jpg';
+import styled from '@emotion/styled'
+import H3 from '../H3'
+import DirectionButton from '../DirectionButton'
+
+const WeclomePageContainer = styled.div`
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
 
 function Welcome(props) {
   return (
     <>
-      <h3>choose your topic</h3>
-      <div className="welcPage">
-        <DirectBtn className="welcBtn" name="anime list" destination="/anime" />
-        <DirectBtn
+      <H3>choose your topic</H3>
+      <WeclomePageContainer>
+        <DirectionButton
+          className="welcBtn"
+          name="anime list"
+          destination="/anime"
+        />
+        <DirectionButton
           className="welcBtn"
           name="add anime"
           destination="/question"
         />
-        <DirectBtn className="welcBtn" name="network" destination="/network" />
-        <DirectBtn className="welcBtn" name="game" destination="/game" />
-      </div>
-      {/* <img className="logo" src={"NinjaProgram"} alt="Ninja surfs" /> */}
+        <DirectionButton
+          className="welcBtn"
+          name="network"
+          destination="/network"
+        />
+        <DirectionButton name="game" destination="/game" />
+      </WeclomePageContainer>
     </>
   )
 }
