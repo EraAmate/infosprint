@@ -1,16 +1,27 @@
 import React from 'react'
-import './Anime.css'
 import Animes from '../GetAnime'
-import DirectBtn from '../DirectBtn'
+
+import styled from '@emotion/styled'
+import H3 from '../H3'
+import DirectionButton from '../DirectionButton'
+
+const AnimePageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+`
 
 function Anime() {
   return (
     <>
-      <div className="animePage">
-        <h3>Find your favourite anime</h3>
-      </div>
+      <AnimePageContainer>
+        <H3>Find your favourite anime</H3>
+      </AnimePageContainer>
+
       <Animes />
-      <DirectBtn className="btn" name="back to menu" destination="/" />
+      <DirectionButton name="back to menu" destination="/" />
     </>
   )
 }

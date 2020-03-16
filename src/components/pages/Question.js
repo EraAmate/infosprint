@@ -1,27 +1,59 @@
 import React from 'react'
-import './Question.css'
 import Card from '../Card'
-import DirectBtn from '../DirectBtn'
+import DirectionButton from '../DirectionButton'
+import H3 from '../H3'
+import Button from '../Button'
 
+import styled from '@emotion/styled'
+
+const QuestionPageContainer = styled.div`
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  font: 20px Phosphate;
+`
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+`
+
+const H3other = styled(H3)`
+  text-align: center;
+  padding: 5px;
+  color: #faaf1e;
+`
+const AddAnimeInput = styled.input`
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 15px;
+  width: 250px;
+  height: 40px;
+  border: none;
+  background-color: #615c5c;
+  color: #faaf1e;
+  font: 20px Phosphate;
+`
+const AddSynopsisInput = styled(AddAnimeInput)`
+  height: 100px;
+`
 function Question() {
   return (
     <>
-      <div className="questionPage">
+      <QuestionPageContainer>
         <Card>
-          <p className="cardTitle">Add your favourite anime</p>
-          <form className="add-inputs-form">
-            <input type="text" className="input" placeholder=" anime name " />
-            <input type="text" className="input" placeholder=" anime image " />
-            <input
-              type="text"
-              className="input input-synopsis"
-              placeholder=" anime synopsis "
-            />
-            <button className="btn">Submit</button>
-            <DirectBtn className="btn" name="back to menu" destination="/" />
-          </form>
+          <H3other>Add your favourite anime</H3other>
+          <Form>
+            <AddAnimeInput type="text" placeholder=" anime name " />
+            <AddAnimeInput type="text" placeholder=" anime image " />
+            <AddSynopsisInput type="text" placeholder=" anime synopsis " />
+            <Button>Submit</Button>
+            <DirectionButton name="back to menu" destination="/" />
+          </Form>
         </Card>
-      </div>
+      </QuestionPageContainer>
     </>
   )
 }
