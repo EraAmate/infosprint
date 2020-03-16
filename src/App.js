@@ -1,5 +1,5 @@
 import React from 'react'
-import AppHeader from './components/AppHeader'
+import AppHeader from '../src/components/AppHeader'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Welcome from './components/pages/Welcome'
 import Anime from './components/pages/Anime'
