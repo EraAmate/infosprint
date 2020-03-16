@@ -17,16 +17,22 @@
 }
 
 .input {
-  text-align: center;
+  text-align: left;
+
+  font-size: 1rem;
   margin-top: 15px;
   width: 250px;
   height: 40px;
   border: none;
-  background-color: #7e7979;
+  background-color: #615c5c;
   color: #faaf1e;
 }
 .input::placeholder {
   color: #faaf1e;
+  opacity: 0.8;
+}
+.input-synopsis {
+  height: 100px;
 }
 .btn {
   border: 2px solid black;

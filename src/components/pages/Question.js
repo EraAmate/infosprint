@@ -1,7 +1,7 @@
-import React from 'react';
-import './Question.css';
-import Card from '../Card';
-import DirectBtn from '../DirectBtn';
+import React from 'react'
+import './Question.css'
+import Card from '../Card'
+import DirectBtn from '../DirectBtn'
 
 function Question() {
   return (
@@ -14,7 +14,7 @@ function Question() {
             <input type="text" className="input" placeholder=" anime image " />
             <input
               type="text"
-              className="input"
+              className="input input-synopsis"
               placeholder=" anime synopsis "
             />
             <button className="btn">Submit</button>
@@ -23,7 +23,7 @@ function Question() {
         </Card>
       </div>
     </>
-  );
+  )
 }
 
-export default Question;
+export default Question
