@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './components/Header'
+import AppHeader from './components/AppHeader'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Welcome from './components/pages/Welcome'
 import Anime from './components/pages/Anime'
@@ -9,16 +9,15 @@ import Game from './components/pages/Game'
 import styled from '@emotion/styled'
 
 const Main = styled.main`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex-box;
+  padding: 30px;
 `
 
 function App() {
   return (
     <>
       <Router>
-        <Header />
+        <AppHeader />
 
         <Main>
           <Switch>

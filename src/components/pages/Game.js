@@ -1,14 +1,23 @@
 import React from 'react'
-import './Game.css'
-import DirectBtn from '../DirectBtn'
+
+import DirectionButton from '../DirectionButton'
+import H3 from '../H3'
+
+import styled from '@emotion/styled'
+
+const NetworkPageContaienr = styled.div`
+  display: flex;
+  justify-content: center;
+  text-align: center;
+`
 
 function Game() {
   return (
     <>
-      <div className="gamePage">
-        <h3>Lets play</h3>
-      </div>
-      <DirectBtn className="btn" name="back to menu" destination="/" />
+      <NetworkPageContaienr>
+        <H3>Lets play</H3>
+      </NetworkPageContaienr>
+      <DirectionButton name="back to menu" destination="/" />
     </>
   )
 }
