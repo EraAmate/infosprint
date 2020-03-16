@@ -1,16 +1,12 @@
-import React from 'react';
-import './Welcome.css';
-import DirectBtn from '../DirectBtn';
+import React from 'react'
+import './Welcome.css'
+import DirectBtn from '../DirectBtn'
 // import NinjaProgram from '../assets/NinjaProgram.jpg';
-
-// import { Link } from 'react-router-dom';
 
 function Welcome(props) {
   return (
     <>
-      <h3>
-        follow the coolest topics all around Japan and anime with info ninja
-      </h3>
+      <h3>choose your topic</h3>
       <div className="welcPage">
         <DirectBtn className="welcBtn" name="anime list" destination="/anime" />
         <DirectBtn
@@ -23,6 +19,6 @@ function Welcome(props) {
       </div>
       {/* <img className="logo" src={"NinjaProgram"} alt="Ninja surfs" /> */}
     </>
-  );
+  )
 }
-export default Welcome;
+export default Welcome

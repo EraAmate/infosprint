@@ -16,5 +16,3 @@ function Anime() {
 }
 
 export default Anime
-
-/// FILTER, SEARCH, API
