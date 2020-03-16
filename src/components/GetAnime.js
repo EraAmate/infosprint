@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import './GetAnime.css'
 
 const Animes = () => {
-  // const [hasError, setErrors] = useState(false);
   const [animes, setAnimes] = useState([])
 
   const [search, setSearch] = useState('test')
@@ -27,7 +26,6 @@ const Animes = () => {
       })
       setAnimes(myAnimes)
     })
-    // .catch(err => setErrors(err));
   }
 
   useEffect(() => {
@@ -58,7 +56,6 @@ const Animes = () => {
           </div>
         ))}
       </div>
-      {/* <span>Has error: {JSON.stringify(hasE)}</span> */}
     </>
   )
 }
