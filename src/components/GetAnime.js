@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 import H3 from './H3'
+import Loading from './Loading'
 
 const AnimeListContainer = styled.div`
   display: flex;
@@ -51,12 +52,11 @@ const Paragraph = styled.p`
 
 const Animes = () => {
   const [animes, setAnimes] = useState([])
-
   const [search, setSearch] = useState('test')
+  const [loading, setLoading] = useState(true)
 
   function searchResults(e) {
     const inputValue = e.target.value
-    console.log(inputValue)
     setSearch(inputValue)
   }
 
@@ -72,6 +72,7 @@ const Animes = () => {
         myAnime.synopsis = result.synopsis
         return myAnime
       })
+      setLoading(false)
       setAnimes(myAnimes)
     })
   }
@@ -80,6 +81,9 @@ const Animes = () => {
     getAnimes()
   })
 
+  if (loading === true) {
+    return <Loading />
+  }
   return (
     <>
       <Container>
