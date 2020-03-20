@@ -1,9 +1,9 @@
 import React from 'react'
-import Animes from '../GetAnime'
+import Animes from '../components/GetAnime'
 
 import styled from '@emotion/styled'
-import H3 from '../H3'
-import DirectionButton from '../DirectionButton'
+import H3 from '../components/H3'
+import DirectionButton from '../components/DirectionButton'
 
 const AnimePageContainer = styled.div`
   display: flex;

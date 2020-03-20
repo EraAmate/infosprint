@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import Ninja from './assets/Ninja.png'
+import Ninja from '../assets/Ninja.png'
 
 const Img = styled.img`
   height: 3.1rem;

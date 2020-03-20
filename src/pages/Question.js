@@ -1,8 +1,8 @@
 import React from 'react'
-import Card from '../Card'
-import DirectionButton from '../DirectionButton'
-import H3 from '../H3'
-import Button from '../Button'
+import Card from '../components/Card'
+import DirectionButton from '../components/DirectionButton'
+import H3 from '../components/H3'
+import Button from '../components/Button'
 
 import styled from '@emotion/styled'
 

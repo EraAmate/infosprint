@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import H3 from '../H3'
-import DirectionButton from '../DirectionButton'
+import H3 from '../components/H3'
+import DirectionButton from '../components/DirectionButton'
 import Shuriken from '../assets/Shuriken.png'
 
 const WeclomePageContainer = styled.div`
