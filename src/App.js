@@ -8,7 +8,7 @@ import Network from './pages/Network'
 import Game from './pages/Game'
 import styled from '@emotion/styled'
 import { ThemeProvider } from 'emotion-theming'
-import sakura from './themes/sakura'
+// import sakura from './themes/sakura'
 import ninja from './themes/ninja'
 
 const Main = styled.main`
@@ -20,7 +20,7 @@ const Main = styled.main`
 
 function App() {
   return (
-    <ThemeProvider theme={sakura}>
+    <ThemeProvider theme={ninja}>
       <Router>
         <AppHeader />
         <Main>
