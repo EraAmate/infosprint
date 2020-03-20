@@ -51,12 +51,11 @@ const Paragraph = styled.p`
 
 const Animes = () => {
   const [animes, setAnimes] = useState([])
-
   const [search, setSearch] = useState('test')
+  const [loading, setLoading] = useState(true)
 
   function searchResults(e) {
     const inputValue = e.target.value
-    console.log(inputValue)
     setSearch(inputValue)
   }
 
@@ -72,6 +71,7 @@ const Animes = () => {
         myAnime.synopsis = result.synopsis
         return myAnime
       })
+      setLoading(false)
       setAnimes(myAnimes)
     })
   }
@@ -80,6 +80,9 @@ const Animes = () => {
     getAnimes()
   })
 
+  if (loading === true) {
+    return <div>Loading...</div>
+  }
   return (
     <>
       <Container>
