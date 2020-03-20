@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 import H3 from './H3'
+import Loading from './Loading'
 
 const AnimeListContainer = styled.div`
   display: flex;
@@ -81,7 +82,7 @@ const Animes = () => {
   })
 
   if (loading === true) {
-    return <div>Loading...</div>
+    return <Loading />
   }
   return (
     <>
