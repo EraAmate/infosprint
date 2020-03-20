@@ -8,7 +8,7 @@ const AnimeListContainer = styled.div`
   flex-direction: column;
   height: auto;
   text-align: center;
-  background-color: #323030;
+  background-color: ${props => props.theme.colors.animeListBg};
   border-radius: 10px;
 `
 
@@ -46,7 +46,7 @@ const Img = styled.img`
 
 const Paragraph = styled.p`
   font-size: 1.5rem;
-  color: white;
+  color: ${props => props.theme.colors.textAnime};
 `
 
 const Animes = () => {

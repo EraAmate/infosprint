@@ -18,10 +18,15 @@ const SwitchBtn = styled.input`
   padding: 8px;
 `
 
-function Welcome(props) {
+function Welcome({ onSwitchButtonClick }) {
   return (
     <>
-      <SwitchBtn type="image" alt="Switch" src={Shuriken} />
+      <SwitchBtn
+        onClick={onSwitchButtonClick}
+        type="image"
+        alt="Switch"
+        src={Shuriken}
+      />
 
       <H3>choose your topic</H3>
 

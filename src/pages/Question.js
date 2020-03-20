@@ -32,7 +32,8 @@ const AddAnimeInput = styled.input`
   width: 250px;
   height: 40px;
   border: none;
-  background-color: #615c5c;
+  background-color: ${props => props.theme.colors.inputPrimary};
+
   color: #faaf1e;
   font: 20px Phosphate;
 `
