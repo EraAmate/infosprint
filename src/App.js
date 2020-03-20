@@ -9,6 +9,7 @@ import Game from './pages/Game'
 import styled from '@emotion/styled'
 import { ThemeProvider } from 'emotion-theming'
 import sakura from './themes/sakura'
+import ninja from './themes/ninja'
 
 const Main = styled.main`
   display: flex-box;
