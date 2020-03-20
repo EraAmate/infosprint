@@ -54,6 +54,7 @@ const Animes = () => {
   const [animes, setAnimes] = useState([])
   const [search, setSearch] = useState('test')
   const [loading, setLoading] = useState(true)
+  const [errorMessage, setErrorMessage] = useState(false)
 
   function searchResults(e) {
     const inputValue = e.target.value
@@ -61,26 +62,33 @@ const Animes = () => {
   }
 
   async function getAnimes() {
-    const data = await fetch(
-      `https://api.jikan.moe/v3/search/anime?q=${search}limit=30`
-    )
-    data.json().then(data => {
-      const myAnimes = data.results.map(result => {
-        const myAnime = {}
-        myAnime.title = result.title
-        myAnime.img = result.image_url
-        myAnime.synopsis = result.synopsis
-        return myAnime
+    try {
+      const data = await fetch(
+        `https://api.jikan.moe/v3/search/anime?q=${search}limit=30`
+      )
+      data.json().then(data => {
+        const myAnimes = data.results.map(result => {
+          const myAnime = {}
+          myAnime.title = result.title
+          myAnime.img = result.image_url
+          myAnime.synopsis = result.synopsis
+          return myAnime
+        })
+        setLoading(false)
+        setAnimes(myAnimes)
       })
-      setLoading(false)
-      setAnimes(myAnimes)
-    })
+    } catch (err) {
+      setErrorMessage(err.message)
+    }
   }
 
   useEffect(() => {
     getAnimes()
   })
 
+  if (errorMessage) {
+    return <div>{errorMessage}</div>
+  }
   if (loading === true) {
     return <Loading />
   }
