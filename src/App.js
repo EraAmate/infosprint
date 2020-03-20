@@ -9,7 +9,8 @@ import Game from './components/pages/Game'
 import styled from '@emotion/styled'
 
 const Main = styled.main`
-  display: flex-box;
+  /* display: flex-box;
+  justify-content: center; */
   padding: 30px;
 `
 
