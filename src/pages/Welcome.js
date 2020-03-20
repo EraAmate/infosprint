@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import H3 from '../H3'
-import DirectionButton from '../DirectionButton'
+import H3 from '../components/H3'
+import DirectionButton from '../components/DirectionButton'
+import Shuriken from '../assets/Shuriken.png'
 
 const WeclomePageContainer = styled.div`
   padding: 30px;
@@ -10,11 +11,25 @@ const WeclomePageContainer = styled.div`
   justify-content: center;
   align-items: center;
 `
+const SwitchBtn = styled.input`
+  height: 60px;
+  background-color: #1a1716;
+  border-radius: 20px;
+  padding: 8px;
+`
 
-function Welcome(props) {
+function Welcome({ onSwitchButtonClick }) {
   return (
     <>
+      <SwitchBtn
+        onClick={onSwitchButtonClick}
+        type="image"
+        alt="Switch"
+        src={Shuriken}
+      />
+
       <H3>choose your topic</H3>
+
       <WeclomePageContainer>
         <DirectionButton
           className="welcBtn"

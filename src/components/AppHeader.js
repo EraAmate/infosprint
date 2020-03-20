@@ -9,7 +9,7 @@ const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: stretch;
-  background-color: #faaf1e;
+  background-color: ${props => props.theme.colors.headerLine};
 `
 const Title = styled.h1`
   font: 31px Phosphate;

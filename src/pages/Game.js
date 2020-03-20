@@ -1,7 +1,7 @@
 import React from 'react'
 
-import DirectionButton from '../DirectionButton'
-import H3 from '../H3'
+import DirectionButton from '../components/DirectionButton'
+import H3 from '../components/H3'
 
 import styled from '@emotion/styled'
 

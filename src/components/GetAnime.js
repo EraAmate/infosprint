@@ -1,8 +1,21 @@
 import React, { useState, useEffect } from 'react'
-import './GetAnime.css'
 import styled from '@emotion/styled'
 import H3 from './H3'
 
+const AnimeListContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+  background-color: ${props => props.theme.colors.animeListBg};
+  border-radius: 10px;
+`
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+`
 const Input = styled.input`
   text-align: center;
   width: 300px;
@@ -11,30 +24,18 @@ const Input = styled.input`
   font-size: 1.5rem;
   font: 18px Phosphate;
   color: #d97919;
+  margin-bottom: 20px;
 `
 const SearchButton = styled.button`
   border-radius: 5px;
   border: 2px solid #1a1918;
-  margin-left: 10px;
+  margin-bottom: 20px;
   font-size: 1rem;
   font: 18px Phosphate;
   width: 100px;
   font-size: 1.5rem;
   color: #d97918;
   background-color: #1a1918;
-`
-const AnimeListContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: auto;
-  text-align: center;
-  background-color: #323030;
-  border-radius: 10px;
-`
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
 `
 const AnimeName = styled(H3)`
   background-color: #d97919;
@@ -45,7 +46,7 @@ const Img = styled.img`
 
 const Paragraph = styled.p`
   font-size: 1.5rem;
-  color: white;
+  color: ${props => props.theme.colors.textAnime};
 `
 
 const Animes = () => {

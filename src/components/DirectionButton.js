@@ -3,8 +3,8 @@ import DirectBtn from './DirectBtn'
 
 const DirectionButton = styled(DirectBtn)`
   border: 2px solid black;
-  background-color: #1a1817;
-  color: #d97919;
+  background-color: ${props => props.theme.colors.bgBtn};
+  color: ${props => props.theme.colors.textBtn};
   height: 70px;
   width: 300px;
   margin-top: 20px;
